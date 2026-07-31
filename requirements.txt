@@ -1,0 +1,11 @@
+streamlit>=1.36
+plotly>=5.22
+pandas>=2.2
+numpy>=1.26
+akshare>=1.14
+requests>=2.32
+beautifulsoup4>=4.12
+feedparser>=6.0
+python-dotenv>=1.0
+apscheduler>=3.10
+
