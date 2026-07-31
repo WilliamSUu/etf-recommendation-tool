@@ -1,6 +1,6 @@
 # ETF 智能推荐工具
 
-基于 **AI 多维度分析** 和 **实时财经资讯** 的 ETF 推荐系统。帮助投资者根据当前市场环境和投资周期智能筛选最具潜力的 ETF。
+基于 **DeepSeek模型 多维度分析** 和 **实时财经资讯** 的 ETF 推荐系统。帮助投资者根据当前市场环境和投资周期智能筛选最具潜力的 ETF。
 
 ![Python](https://img.shields.io/badge/Python-3.9+-blue?logo=python)
 ![Flask](https://img.shields.io/badge/Flask-2.0+-green?logo=flask)
@@ -9,14 +9,14 @@
 
 ---
 ## 背景
-因为想跟踪行业热点赚钱，于是盯上了ETF这个好工具。通过高行业集中度以及多股分散风险，ETF可以很好地反映一个行业/主题的投资前景，为此开发这个小工具。感谢腾讯和东财api大佬！
+因为想跟踪行业热点赚钱，于是盯上了ETF这个好工具。通过高行业集中度以及多股分散风险，ETF可以很好地反映一个行业/主题的投资前景，为此开发这个小工具。感谢腾讯和东财api！本工具未做任何专业部署上线，开箱后在环境中配置DeepSeek api密钥后即可食用。
 
 ## 核心特性
 
-### **AI 驱动的多维评分**
+### **AI 多维评分**
 - **相关度评分** — ETF 与财经资讯的关联强度
-- **影响力度评分** — 资讯对市场可能造成的价格变化
-- **持续时间评分** — 资讯影响的时间长度
+- **影响度评分** — 资讯对市场可能造成的价格变化
+- **持续度评分** — 资讯影响的时间长度
 - **综合评分** — 加权融合三个维度：40% 相关度 + 35% 影响力 + 25% 持续时间（可以根据自己理解调整）
 
 ### **投资周期智能筛选**
@@ -81,7 +81,7 @@ pip install -r requirements.txt
 ### **3. 配置 API Key**
 创建 `.env` 文件：
 ```env
-DEEPSEEK_API_KEY=your_api_key_here
+DEEPSEEK_API_KEY=your_api_key_here（填入自己的api密钥）
 DEEPSEEK_BASE_URL=https://api.deepseek.com/v1
 DEEPSEEK_MODEL=deepseek-chat
 ```
